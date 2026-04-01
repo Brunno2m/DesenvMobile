@@ -4,7 +4,7 @@ import Identidade from './identidade';
 
 export default function App() {
   return (
-    <Identidade style={{ margin: 10 }}>
+    <Identidade style={{ margin: 40 }}>
       <Text></Text>
     </Identidade>
   );
