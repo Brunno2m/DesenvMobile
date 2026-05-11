@@ -1,6 +1,7 @@
 import { CameraView, CameraType, useCameraPermissions } from 'expo-camera';
 import { useRef, useState } from 'react';
 import { Button, StyleSheet, Text, TouchableOpacity, View } from 'react-native';
+import Ionicons from '@expo/vector-icons/Ionicons';
 
 export default function App() {
   const [facing, setFacing] = useState<CameraType>('back');
@@ -52,7 +53,7 @@ export default function App() {
         </TouchableOpacity>
         <TouchableOpacity style={styles.button} onPress={takePhoto}>
           <Text style={styles.text} disabled={!isCameraReady}>
-            Tirar Foto
+            <Ionicons name="checkmark-circle" size={32} color="green" />
           </Text>
         </TouchableOpacity>
       </View>
