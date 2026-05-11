@@ -53,7 +53,7 @@ export default function App() {
         </TouchableOpacity>
         <TouchableOpacity style={styles.button} onPress={takePhoto}>
           <Text style={styles.text} disabled={!isCameraReady}>
-            <Ionicons name="checkmark-circle" size={32} color="green" />
+            <Ionicons name="camera" size={50} color="white" />
           </Text>
         </TouchableOpacity>
       </View>
